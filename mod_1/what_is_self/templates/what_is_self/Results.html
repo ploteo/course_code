@@ -1,0 +1,47 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Objects Round {{ player.round_number }}
+{% endblock %}
+
+{% block content %}
+
+<table>
+    <tr>
+    <td>
+        {{ player_object }}
+    </td>
+</tr>
+<tr>
+    <td>
+        {{ player_session }}
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{ player_subsession }}
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{ player_group }}
+    </td>
+    </tr>
+    <tr>
+    <td>
+        {{ player_participant }}
+    </td>
+    </tr>
+    <tr>
+    <td>
+      Player object in previous rounds:  {{ player_object_previous }}
+    </td>
+    </tr>
+    <tr>
+</tr>   
+</table>
+
+    {% next_button %}
+    
+{% endblock %}
