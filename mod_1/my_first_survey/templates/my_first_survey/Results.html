@@ -1,0 +1,13 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Your age
+{% endblock %}
+
+{% block content %}
+Your age is {{your_age}}. Thank you for answering!
+    {% next_button %}
+{% endblock %}
+
+

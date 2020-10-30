@@ -1,0 +1,14 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Insert your age here
+{% endblock %}
+
+{% block content %}
+
+{% formfield player.age %}
+
+    {% next_button %}
+{{ form.age.errors }}
+{% endblock %}
